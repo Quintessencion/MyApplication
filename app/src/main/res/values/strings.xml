@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Recycler</string>
+    <string name="back"><![CDATA[< Back]]></string>
+    <string name="action_setting">Settings</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior
+    </string>
+    <string name="like">В Windows имеется система Аудита, позволяющая отслеживать и журналировать информацию о том,
+        когда, кем и с помощью какой программы были удалены документы. По умолчанию, Аудит не задействован - слежение
+        само по себе требует определённый про
+    </string>
+    <string name="error">Оснастка - небольшие программы, позволяющие настроить разные аспекты операционной системы
+    </string>
+    <string name="complete">Консоль ММС - компонент операционной системы Windows 2000 и более поздних версий Windows.
+        Позволяет системным администраторам и опытным пользователям с помощью гибкого интерфейса конфигурировать и
+        отслеживать работу системы
+    </string>
+    <string name="frag1_text">Fragment 1</string>
+    <string name="frag2_text">Fragment 2</string>
+    <string name="log">Log</string>
+    <string name="find">Find</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
