@@ -6,23 +6,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TabHost;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
 
 public class TabHostActivity extends TabActivity {
+    //Fields
+    final String TABS_TAG_1 = "Tag 5";
+    final String TABS_TAG_2 = "Tag 6";
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_host);
 
-//        TabHost tabHost = getTabHost();//этот метод инициализирует TabHost без .setup()
-        TabHost tabHost = (TabHost) findViewById(android.R.id.tabhost);
+        TabHost tabHost = getTabHost();//этот метод инициализирует TabHost без .setup()
+//        TabHost tabHost = (TabHost) findViewById(android.R.id.tabhost);
         // инициализация
-        tabHost.setup();
+//        tabHost.setup();
 
         TabHost.TabSpec tabSpec;
-
 
         // создаем вкладку и указываем тег
         tabSpec = tabHost.newTabSpec("tag1");
@@ -54,7 +57,20 @@ public class TabHostActivity extends TabActivity {
 
         tabSpec = tabHost.newTabSpec("tag4");
         tabSpec.setIndicator("Вкладка 4");
+        //добавляем содержимое - Activity
         tabSpec.setContent(new Intent(this, OneActivity.class));
+        tabHost.addTab(tabSpec);
+
+
+        //содержимое с помощью TabHost.TabContentFactory
+        tabSpec = tabHost.newTabSpec(TABS_TAG_1);
+        tabSpec.setContent(tabFactory);
+        tabSpec.setIndicator("Вкладка 5");
+        tabHost.addTab(tabSpec);
+
+        tabSpec = tabHost.newTabSpec(TABS_TAG_2);
+        tabSpec.setContent(tabFactory);
+        tabSpec.setIndicator("Вкладка 6");
         tabHost.addTab(tabSpec);
 
         // вторая вкладка будет выбрана по умолчанию
@@ -67,4 +83,19 @@ public class TabHostActivity extends TabActivity {
             }
         });
     }
+
+    TabHost.TabContentFactory tabFactory = new TabHost.TabContentFactory() {
+
+        @Override
+        public View createTabContent(String tag) {
+            if (tag.equals(TABS_TAG_1)) {
+                return getLayoutInflater().inflate(R.layout.tab, null);
+            } else if (tag.equals(TABS_TAG_2)) {
+                TextView tv = new TextView(TabHostActivity.this);
+                tv.setText("Это создано вручную");
+                return tv;
+            }
+            return null;
+        }
+    };
 }

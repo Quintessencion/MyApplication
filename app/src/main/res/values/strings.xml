@@ -8,7 +8,7 @@
         когда, кем и с помощью какой программы были удалены документы. По умолчанию, Аудит не задействован - слежение
         само по себе требует определённый про
     </string>
-    <string name="error">Оснастка - небольшие программы, позволяющие настроить разные аспекты операционной системы
+    <string name="error2">Оснастка - небольшие программы, позволяющие настроить разные аспекты операционной системы
     </string>
     <string name="complete">Консоль ММС - компонент операционной системы Windows 2000 и более поздних версий Windows.
         Позволяет системным администраторам и опытным пользователям с помощью гибкого интерфейса конфигурировать и
@@ -32,7 +32,6 @@
     <string name="save_data">Сохранить данные?</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
-    <string name="cancel">Отмена</string>
     <string name="saved">Сохранено</string>
     <string name="title_activity_settings">Settings</string>
 
@@ -128,4 +127,27 @@
     <string name="text_tab4">Это четвертая вкладка</string>
     <string name="text_tab_header">Свой заголовок</string>
     <string name="text_activity1">Это первое Activity</string>
+    <string name="text_tab">Это создано с помощью LayoutInflater </string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="test">Test</string>
+    <string name="connect">Connect</string>
+    <string name="info">Подробно</string>
+    <string name="get">Result</string>
+    <string name="cancel">Cancel</string>
+    <string name="status">Status</string>
+    <string name="start_service">Start service</string>
+    <string name="stop_service">Stop service</string>
+    <string name="bind">Bind</string>
+    <string name="unbind">Unbind</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="error">Error</string>
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="item3">Item3</string>
+    <string name="item4">Item4</string>
 </resources>

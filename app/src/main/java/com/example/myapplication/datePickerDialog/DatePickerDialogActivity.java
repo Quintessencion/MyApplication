@@ -43,8 +43,7 @@ public class DatePickerDialogActivity extends AppCompatActivity {
 
     DatePickerDialog.OnDateSetListener myCallBack = new DatePickerDialog.OnDateSetListener() {
 
-        public void onDateSet(DatePicker view, int year, int monthOfYear,
-                              int dayOfMonth) {
+        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
             myYear = year;
             myMonth = monthOfYear;
             myDay = dayOfMonth;
