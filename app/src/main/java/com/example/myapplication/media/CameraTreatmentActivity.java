@@ -45,6 +45,7 @@ public class CameraTreatmentActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         camera = Camera.open(CAMERA_ID);
+
         setPreviewSize(FULL_SCREEN);
     }
 
@@ -115,8 +116,7 @@ public class CameraTreatmentActivity extends AppCompatActivity {
         // подготовка матрицы преобразования
         if (!fullScreen) {
             // если превью будет "втиснут" в экран (второй вариант из урока)
-            matrix.setRectToRect(rectPreview, rectDisplay,
-                    Matrix.ScaleToFit.START);
+            matrix.setRectToRect(rectPreview, rectDisplay, Matrix.ScaleToFit.START);
         } else {
             // если экран будет "втиснут" в превью (третий вариант из урока)
             matrix.setRectToRect(rectDisplay, rectPreview,
