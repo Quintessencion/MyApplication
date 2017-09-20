@@ -176,4 +176,9 @@
     <string name="stop_record">Stop</string>
     <string name="color_effect">Color Effect</string>
     <string name="flash_mode">Flash Mode</string>
+    <string name="list">List</string>
+    <string name="light">Light</string>
+    <string name="provider_gps">GPS</string>
+    <string name="provider_network">Network</string>
+    <string name="location_settings">Location settings</string>
 </resources>
